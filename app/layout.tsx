@@ -11,10 +11,65 @@ import { Analytics } from "@vercel/analytics/react"
 const inter = Inter({ subsets: ["latin"], display: "swap" })
 
 export const metadata: Metadata = {
-  title: "Weblyst | Digital Services for Modern Businesses",
+  metadataBase: new URL("https://theskitbit.com"),
+  title: {
+    default: "Weblyst | Digital Marketing & Web Development Solutions",
+    template: "%s | Weblyst",
+  },
   description:
-    "Professional website building, social media management, and Meta ads services. Transform your digital presence with Weblyst.",
-  generator: "v0.app",
+    "Weblyst provides professional digital marketing and web development solutions. Fast, SEO-friendly websites, social media management, and Meta ads services to grow your business online.",
+  keywords: [
+    "digital marketing",
+    "web development",
+    "website building",
+    "social media management",
+    "Meta ads",
+    "Facebook ads",
+    "Instagram marketing",
+    "SEO services",
+    "fast websites",
+    "responsive web design",
+    "digital solutions",
+    "online marketing",
+  ],
+  authors: [{ name: "Weblyst" }],
+  creator: "Weblyst",
+  publisher: "Weblyst",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://theskitbit.com",
+    title: "Weblyst | Digital Marketing & Web Development Solutions",
+    description:
+      "Professional digital marketing and web development solutions. Fast, SEO-friendly websites, social media management, and Meta ads services.",
+    siteName: "Weblyst",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Weblyst | Digital Marketing & Web Development Solutions",
+    description:
+      "Professional digital marketing and web development solutions. Fast, SEO-friendly websites, social media management, and Meta ads services.",
+    creator: "@theskitbit",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  verification: {
+    google: "your-google-verification-code",
+  },
 }
 
 export default function RootLayout({
